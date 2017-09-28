@@ -35,10 +35,10 @@ mv wildfly-$WILDFLY_VERSION $JBOSS_HOME
 rm wildfly-$WILDFLY_VERSION.tar.gz
 echo "done"
 
-echo -n "-----> Copying standalone... "
-rm $JBOSS_HOME/standalone/configuration/standalone.xml
-cp .s2i/standalone/standalone.xml $JBOSS_HOME/standalone/configuration/
-echo "done"
+# echo -n "-----> Copying standalone... "
+# rm $JBOSS_HOME/standalone/configuration/standalone.xml
+# cp .s2i/standalone/standalone.xml $JBOSS_HOME/standalone/configuration/
+# echo "done"
 
 echo -n "-----> Deploying war file(s)... "
 cp deployments/*.war $JBOSS_HOME/standalone/deployments/
