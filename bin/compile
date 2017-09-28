@@ -29,10 +29,10 @@ cd $BUILD_DIR
 mkdir -p .jboss
 
 echo -n "-----> Installing Wildfly ${WILDFLY_VERSION}... "
-curl --retry 3 -s -O https://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz
-tar xf wildfly-$WILDFLY_VERSION.tar.gz
-mv wildfly-$WILDFLY_VERSION $JBOSS_HOME
-rm wildfly-$WILDFLY_VERSION.tar.gz
+#curl --retry 3 -s -O https://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz
+#tar xf wildfly-$WILDFLY_VERSION.tar.gz
+#mv wildfly-$WILDFLY_VERSION $JBOSS_HOME
+#rm wildfly-$WILDFLY_VERSION.tar.gz
 echo "done"
 
 # echo -n "-----> Copying standalone... "
